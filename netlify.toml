@@ -1,0 +1,7 @@
+[build]
+  command = "pip install -r backend/requirements.txt"
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  python_runtime = "python3.11"
