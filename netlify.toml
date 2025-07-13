@@ -1,7 +1,9 @@
 [build]
-  command = "pip install -r backend/requirements.txt"
   publish = "."
 
+  # Install dependencies and build command
+  command = "pip install -r requirements.txt"
+
 [functions]
+  # Point to where your FastAPI app will be deployed as serverless functions
   directory = "netlify/functions"
-  python_runtime = "python3.11"
